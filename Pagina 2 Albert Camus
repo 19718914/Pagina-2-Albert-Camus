@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <style>
+        body {
+            background-color: red;
+            color: green;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: rgb(12, 172, 12);
+            text-align: center;
+            margin: 10px 0;
+        }
+        h2 {
+            color: rgb(249, 252, 249);
+            text-align: center;
+            margin: 10px 0;
+        }
+        marquee {
+            color: rgb(247, 248, 247);
+            font-size: 24px;
+            font-weight: bold;
+            height: 200px;
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .biografia-container {
+            width: 80%;
+            max-width: 800px;
+            margin-top: 30px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .biografia-container img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+        .biografia-container p {
+            color: rgb(248, 250, 248);
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            text-align: justify;
+        }
+        .obras-container {
+            width: 80%;
+            max-width: 800px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .obras-container h3 {
+            color: rgb(252, 255, 252);
+            text-align: center;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .obras-container ul {
+            color: rgb(250, 252, 250);
+            font-size: 16px;
+            line-height: 1.8;
+            padding-left: 30px;
+            margin: 0;
+        }
+        .obras-container ul li {
+            margin-bottom: 5px;
+        }
+        .galeria-container {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .galeria-container h3 {
+            color: rgb(252, 255, 252);
+            text-align: center;
+            margin-top: 0;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 10px 0;
+            justify-content: flex-start;
+        }
+        .galeria-item {
+            flex: 0 0 auto;
+            width: 180px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .galeria-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid rgb(12, 172, 12);
+        }
+        .galeria-item p {
+            color: rgb(248, 250, 248);
+            font-size: 14px;
+            margin: 8px 0 0 0;
+            font-weight: bold;
+        }
+        .galeria::-webkit-scrollbar {
+            height: 8px;
+        }
+        .galeria::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .galeria::-webkit-scrollbar-thumb {
+            background: rgb(12, 172, 12);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <h2>Autor: Giovanni Alberto Figueroa López</h2>
+    <p>Seccion: 1-3C</p>
+    <marquee direction="down" height="200" scrollamount="5" behavior="scroll">
+        CAMUS-2026
+    </marquee>
+    
+    <div class="biografia-container">
+        <img src="albert camus.jpg" alt="Albert Camus">
+        <p>
+            <strong>Albert Camus</strong> (1913-1960) fue un escritor, filósofo y periodista francés nacido en 
+            Mondovi, Argelia. Hijo de Lucien Camus, un trabajador agrícola de origen alsaciano que murió en la 
+            Batalla del Marne durante la Primera Guerra Mundial cuando Albert apenas tenía un año, y de Catherine 
+            Hélène Sintès, una lavandera de ascendencia española que quedó viuda y tuvo que criar a sus dos hijos 
+            en condiciones de extrema pobreza en el barrio obrero de Belcourt en Argel. A pesar de las 
+            dificultades económicas, su madre trabajó incansablemente para sacar adelante a la familia, y el 
+            joven Camus pudo estudiar gracias a una beca, destacando en el fútbol y en sus estudios académicos.
+            <br><br>
+            Es conocido por ser uno de los principales exponentes del existencialismo y el absurdo filosófico. 
+            Sus obras más famosas incluyen <em>El extranjero</em> (1942), <em>La peste</em> (1947) y 
+            <em>El mito de Sísifo</em> (1942). También escribió obras de teatro como <em>Calígula</em> (1944) 
+            y <em>Los justos</em> (1949), así como ensayos filosóficos y artículos periodísticos.
+            <br><br>
+            En <strong>1957</strong>, Camus recibió el <strong>Premio Nobel de Literatura</strong> "por su 
+            importante producción literaria que ilumina los problemas de la conciencia humana en la época 
+            contemporánea". Con solo 44 años, se convirtió en el segundo escritor más joven en recibir este 
+            galardón, después de Rudyard Kipling. Su discurso de aceptación, titulado "El artista y su tiempo", 
+            reflexionó sobre el papel del escritor en la sociedad y su compromiso con la verdad y la libertad.
+            <br><br>
+            Su pensamiento se centró en la búsqueda de sentido en un mundo sin significado aparente, defendiendo 
+            valores como la solidaridad, la justicia y la rebeldía contra la opresión. Trágicamente, Camus falleció 
+            el 4 de enero de 1960 en un accidente automovilístico en Villeblevin, Francia, a los 46 años, dejando 
+            inconclusa su obra póstuma <em>El primer hombre</em>, publicada en 1994.
+        </p>
+    </div>
+
+    <div class="obras-container">
+        <h3>OBRAS DE ALBERT CAMUS</h3>
+        <ul>
+            <li><strong>1. El extranjero</strong> (1942) - Novela</li>
+            <li><strong>2. El mito de Sísifo</strong> (1942) - Ensayo filosófico</li>
+            <li><strong>3. Calígula</strong> (1944) - Teatro</li>
+            <li><strong>4. La peste</strong> (1947) - Novela</li>
+            <li><strong>5. Los justos</strong> (1949) - Teatro</li>
+            <li><strong>6. El hombre rebelde</strong> (1951) - Ensayo</li>
+            <li><strong>7. El estado de sitio</strong> (1948) - Teatro</li>
+            <li><strong>8. Cartas a un amigo alemán</strong> (1945) - Ensayo</li>
+            <li><strong>9. La caída</strong> (1956) - Novela</li>
+            <li><strong>10. El exilio y el reino</strong> (1957) - Relatos</li>
+            <li><strong>11. El primer hombre</strong> (1994, póstuma) - Novela inconclusa</li>
+        </ul>
+    </div>
+
+    <div class="galeria-container">
+        <h3>GALERÍA DE OBRAS</h3>
+        <div class="galeria">
+            <div class="galeria-item">
+                <img src="EL EXTRANQJEROA.jpg" alt="El extranjero">
+                <p>El extranjero (1942)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="el mito de sisifo.jpg" alt="El mito de Sísifo">
+                <p>El mito de Sísifo (1942)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="caligula.jpg" alt="Calígula">
+                <p>Calígula (1944)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="la peste.jpg" alt="La peste">
+                <p>La peste (1947)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="los justos.jpg" alt="Los justos">
+                <p>Los justos (1949)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="el hombre rebelde.jpg" alt="El hombre rebelde">
+                <p>El hombre rebelde (1951)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="la caida.jpg" alt="La caída">
+                <p>La caída (1956)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="" alt="El exilio y el reino">
+                <p>El exilio y el reino (1957)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
